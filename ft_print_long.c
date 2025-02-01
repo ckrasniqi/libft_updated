@@ -1,20 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   lib.h                                              :+:      :+:    :+:   */
+/*   ft_print_long.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ckrasniq <ckrasniq@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/26 16:02:03 by ckrasniq          #+#    #+#             */
-/*   Updated: 2025/01/31 13:08:59 by ckrasniq         ###   ########.fr       */
+/*   Created: 2024/11/22 18:47:50 by ckrasniq          #+#    #+#             */
+/*   Updated: 2025/01/31 13:06:59 by ckrasniq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIB_H
-# define LIB_H
+#include "ft_printf.h"
 
-# include "Printf/ft_printf.h"
-# include "get_next_line/get_next_line.h"
-# include "Libft/libft.h"
+void	ft_print_long(unsigned int n, int *count)
+{
+	char	*str;
 
-#endif
+	str = ft_itoa_long(n);
+	if (!str)
+	{
+		*count = -1;
+		return ;
+	}
+	else
+	{
+		ft_printf_putstr_fd(str, count);
+		free(str);
+	}
+}
