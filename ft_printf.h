@@ -6,13 +6,15 @@
 /*   By: ckrasniq <ckrasniq@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/17 17:43:21 by ckrasniq          #+#    #+#             */
-/*   Updated: 2025/01/31 13:05:38 by ckrasniq         ###   ########.fr       */
+/*   Updated: 2025/02/05 20:29:57 by ckrasniq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
+# include "get_next_line.h"
+# include "libft.h"
 # include <limits.h>
 # include <stdarg.h>
 # include <stdlib.h>

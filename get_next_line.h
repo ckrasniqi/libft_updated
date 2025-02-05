@@ -6,13 +6,15 @@
 /*   By: ckrasniq <ckrasniq@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 20:06:15 by ckrasniq          #+#    #+#             */
-/*   Updated: 2025/01/31 13:09:34 by ckrasniq         ###   ########.fr       */
+/*   Updated: 2025/02/05 20:30:27 by ckrasniq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef GET_NEXT_LINE_H
 # define GET_NEXT_LINE_H
 
+# include "ft_printf.h"
+# include "ft_printf.h"
 # include <stdbool.h>
 # include <stdlib.h>
 # include <unistd.h>
