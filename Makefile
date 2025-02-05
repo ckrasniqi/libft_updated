@@ -6,11 +6,11 @@
 #    By: ckrasniq <ckrasniq@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/15 16:59:12 by ckrasniq          #+#    #+#              #
-#    Updated: 2025/02/01 19:25:52 by ckrasniq         ###   ########.fr        #
+#    Updated: 2025/02/05 16:17:07 by ckrasniq         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-# Variables
+
 NAME = libft.a
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
@@ -27,44 +27,29 @@ SRCS =			ft_putnbr_fd.c ft_putendl_fd.c ft_putstr_fd.c ft_putchar_fd.c ft_strite
 				ft_print_hex_u.c ft_print_long.c ft_print_nbr.c ft_print_ptr.c ft_printf.c ft_putchar_fd.c \
 				ft_putstr_fd.c ft_strlen.c \
 
-# ---------- COLORS AND STUFF ---------- #
-GREEN =  033[0;32m
-RED =  033[0;31m
-YELLOW =  033[0;33m
-CYAN =  033[0;36m
-NC =  033[0m
-CLEAR_LINE =  033[2K r
 
-TOTAL_SRCS = $(words $(SRCS))
-CURRENT = 0
-
-# Object files
 OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
 	@true
 
-# Rule to compile the main library
+
 $(NAME): $(OBJS)
 	@ar rcs $(NAME) $(OBJS)
 
-# Object file compilation rule
+
 .c.o:
-	@$(eval CURRENT := $(shell echo $$(($(CURRENT) + 1))))
-	@$(eval PERCENT := $(shell echo $$(($(CURRENT) * 100 / $(TOTAL_SRCS)))))
-	@printf "$(CLEAR_LINE)$(YELLOW)🚧 Compiling $(PERCENT)%% [$(CURRENT)/$(TOTAL_SRCS)] $(CYAN)$<$(NC) 🚧"
 	@$(CC) $(CFLAGS) -c $< -o $@
 
-# Clean object files and libraries
+
 clean:
 	@rm -f $(OBJS)
 
-# Clean all generated files
+
 fclean: clean
 	@rm -f $(NAME)
 
-# Rebuild everything
+
 re: fclean all
 
-# Phony targets
 .PHONY: all clean fclean re
