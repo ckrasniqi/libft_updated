@@ -6,7 +6,7 @@
 /*   By: ckrasniq <ckrasniq@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/06 19:05:08 by ckrasniq          #+#    #+#             */
-/*   Updated: 2025/02/06 19:17:22 by ckrasniq         ###   ########.fr       */
+/*   Updated: 2025/02/06 19:57:19 by ckrasniq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,4 @@ void	ft_printf_putstr_fd(char *s, int *count)
 			i++;
 		}
 	}
-	
 }
