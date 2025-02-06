@@ -6,7 +6,7 @@
 #    By: ckrasniq <ckrasniq@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/15 16:59:12 by ckrasniq          #+#    #+#              #
-#    Updated: 2025/02/06 19:00:39 by ckrasniq         ###   ########.fr        #
+#    Updated: 2025/02/06 21:03:21 by ckrasniq         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,7 @@ SRCS =			ft_putnbr_fd.c ft_putendl_fd.c ft_printf_putstr_fd.c ft_putchar_fd.c ft
 				ft_lstadd_front_bonus.c ft_lstsize_bonus.c ft_lstlast_bonus.c ft_lstadd_back_bonus.c \
 				ft_lstdelone_bonus.c ft_lstclear_bonus.c ft_lstiter_bonus.c ft_lstmap_bonus.c \
 				get_next_line.c get_next_line_utils.c ft_calloc.c ft_itoa_long.c ft_itoa.c ft_print_hex_l.c \
-				ft_print_hex_u.c ft_print_long.c ft_print_nbr.c ft_print_ptr.c ft_printf.c ft_putchar_fd.c \
+				ft_print_hex_u.c ft_print_long.c ft_print_nbr.c ft_print_ptr.c ft_printf.c ft_printf_putchar_fd.c \
 				ft_putstr_fd.c ft_strlen.c \
 
 
