@@ -6,7 +6,7 @@
 /*   By: ckrasniq <ckrasniq@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 15:34:46 by ckrasniq          #+#    #+#             */
-/*   Updated: 2025/02/01 19:09:59 by ckrasniq         ###   ########.fr       */
+/*   Updated: 2025/02/06 19:18:59 by ckrasniq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,48 @@
 
 # include <stdlib.h>
 # include <unistd.h>
+# include <stdio.h>
+# include <limits.h>
+# include <stdarg.h>
+# include <unistd.h>
+# include <stdbool.h>
 
-#include "ft_printf.h"
-#include "get_next_line.h"
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 100
+# endif
 
 typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
 }					t_list;
+
+
+// get_next_line
+
+char	*get_next_line(int fd);
+char	*ft_gnl_strjoin(char const *prefix, char const *suffix);
+size_t	ft_gnl_strlen(const char *c);
+char	*ft_gnl_strchr(char *str, char c);
+char	*ft_gnl_strdup(const char *src);
+void	*ft_gnl_memmove(void *dst, const void *src, size_t n);
+
+// ft_printf
+
+void	*ft_calloc(size_t count, size_t size);
+char	*ft_itoa_long(unsigned int n);
+char	*ft_itoa(int n);
+void	ft_print_hex_l(unsigned int num, int *count);
+void	ft_print_hex_u(unsigned int num, int *count);
+void	ft_print_long(unsigned int n, int *count);
+void	ft_print_nbr(int n, int *count);
+void	ft_print_ptr(void *ptr, int *count);
+int		ft_printf(const char *format, ...);
+void	ft_printf_putchar_fd(char c, int fd, int *count);
+void	ft_printf_putstr_fd(char *s, int *count);
+size_t	ft_strlen(const char *c);
+
+// Libft
 
 int		ft_isalnum(int i);
 int		ft_isalpha(int i);

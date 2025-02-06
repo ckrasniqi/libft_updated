@@ -6,11 +6,11 @@
 /*   By: ckrasniq <ckrasniq@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 19:57:41 by ckrasniq          #+#    #+#             */
-/*   Updated: 2025/01/31 13:07:07 by ckrasniq         ###   ########.fr       */
+/*   Updated: 2025/02/06 19:00:06 by ckrasniq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
 void	ft_print_nbr(int n, int *count)
 {

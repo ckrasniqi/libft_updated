@@ -6,11 +6,11 @@
 /*   By: ckrasniq <ckrasniq@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/23 18:46:21 by ckrasniq          #+#    #+#             */
-/*   Updated: 2025/01/31 13:10:32 by ckrasniq         ###   ########.fr       */
+/*   Updated: 2025/02/06 19:00:18 by ckrasniq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
 void	find_fspecifier(const char *format, va_list args, int i, int *count)
 {

@@ -6,11 +6,11 @@
 /*   By: ckrasniq <ckrasniq@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 20:19:15 by ckrasniq          #+#    #+#             */
-/*   Updated: 2025/01/31 13:07:17 by ckrasniq         ###   ########.fr       */
+/*   Updated: 2025/02/06 19:00:08 by ckrasniq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
 int	length_of_hex(unsigned long long num)
 {

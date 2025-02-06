@@ -6,7 +6,7 @@
 #    By: ckrasniq <ckrasniq@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/15 16:59:12 by ckrasniq          #+#    #+#              #
-#    Updated: 2025/02/05 16:17:07 by ckrasniq         ###   ########.fr        #
+#    Updated: 2025/02/06 19:00:39 by ckrasniq         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ NAME = libft.a
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
-SRCS =			ft_putnbr_fd.c ft_putendl_fd.c ft_putstr_fd.c ft_putchar_fd.c ft_striteri.c \
+SRCS =			ft_putnbr_fd.c ft_putendl_fd.c ft_printf_putstr_fd.c ft_putchar_fd.c ft_striteri.c \
 				ft_memcpy.c ft_itoa.c ft_strlen.c ft_strdup.c  ft_memcpy.c ft_split.c ft_atoi.c \
 				ft_strjoin.c ft_strtrim.c ft_strrchr.c ft_strnstr.c ft_memmove.c ft_substr.c \
 				ft_memset.c ft_calloc.c ft_strchr.c ft_bzero.c ft_isalnum.c ft_isalpha.c \
