@@ -6,11 +6,11 @@
 /*   By: ckrasniq <ckrasniq@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 20:06:20 by ckrasniq          #+#    #+#             */
-/*   Updated: 2025/02/06 18:51:11 by ckrasniq         ###   ########.fr       */
+/*   Updated: 2025/02/06 19:20:54 by ckrasniq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "libft.h"
 
 char	*ft_gnl_strchr(char *str, char c)
 {
